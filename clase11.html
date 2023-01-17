@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./logos/favicon_bota_fora.png.svg"
+      type="img"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --black: #000000;
+        --white: #ffffff;
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --dark: #232830;
+        --hospital-green: #acd9b2;
+        --azul-suave: #59c1bd;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Kanit", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 24px;
+        border-bottom:1px solid var(--very-light-pink) ;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .logo {
+        width: 100px;
+      }
+
+      .navBarIzq ul,
+      .navBarDer ul {
+        list-style: none;
+        padding: 0;
+        margin:0;
+        display: flex;
+        align-items: center;
+        height: 60px;
+      }
+
+      .navBarIzq {
+        display: flex;
+      }
+
+      .navBarIzq ul {
+        margin-left: 12px;
+      }
+
+      .navBarIzq ul li a,
+      .navBarDer ul li a {
+        text-decoration: none;
+        color: var(--very-light-pink);
+        border: 1px solid var(--white);
+        padding: 8px;
+        border-radius: 8px;
+
+      }
+
+      .navBarIzq ul li a:hover,
+      .navBarDer ul li a:hover {
+        color: var(--azul-suave);
+        border: 1px solid var(--azul-suave);
+
+      }
+
+
+
+      .email{
+        color: var(--very-light-pink);
+        font-size: var(--sm);
+        margin-right: 12px;
+      }
+
+      .navBarCar{
+        position: relative;
+      }
+
+      .navBarCar div{
+        width: 16px;
+        height: 16px;
+        background-color: var(--azul-suave);
+        border-radius: 50%;
+        font-size: var(--sm);
+        font-weight: bold;
+        position: absolute;
+        top: -6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      @media (max-width:640px){
+        .menu{
+          display: block;
+        }
+
+        .navBarIzq ul{
+          display: none;
+        }
+
+        .email{
+          display: none;
+        }
+      }
+
+
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <img src="./icons/icon_menu.svg" alt="menu" class="menu" />
+      <div class="navBarIzq">
+        <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo" />
+        <ul>
+          <li>
+            <a href="">Todo</a>
+          </li>
+          <li>
+            <a href="">Ropa</a>
+          </li>
+          <li>
+            <a href="">Mueblas</a>
+          </li>
+          <li>
+            <a href="">Electronica</a>
+          </li>
+          <li>
+            <a href="">Juguetes</a>
+          </li>
+          <li>
+            <a href="">Otros</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navBarDer">
+        <ul>
+          <li class="email">correo@preubas.com</li>
+          <li class="navBarCar">
+            <img
+              src="./icons/icon_shopping_cart.svg"
+              alt="Carrito de compras"
+            />
+            <div>2</div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
