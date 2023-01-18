@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./logos/favicon_bota_fora.png.svg"
+      type="img"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --black: #000000;
+        --white: #ffffff;
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --dark: #232830;
+        --hospital-green: #acd9b2;
+        --azul-suave: #59c1bd;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Kanit", sans-serif;
+      }
+
+      .primarybtn {
+        background-color: var(--azul-suave);
+        border-radius: 8px;
+        border: none;
+        color: white;
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        height: 50px;
+      }
+
+      .addCardBUtton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .prodcuDetalle {
+        width: 360px;
+        padding-bottom: 24px;
+      }
+
+      .prodcuDetalle > img:nth-child(1){
+        position: absolute;
+        top: 12px;
+        left: 12px;
+      }
+
+      .prodcuDetalle > img:nth-child(1):hover {
+        cursor: pointer;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <aside class="prodcuDetalle">
+      <img
+        src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="bici"
+      />
+      <div class="producInfo">
+        <p>$150.000</p>
+        <p>Bici</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+          delectus fugiat laborum, distinctio tenetur blanditiis assumenda neque
+          amet quas eligendi facilis dicta recusandae! Deleniti magnam ea rem
+          sed, repudiandae consequuntur.
+        </p>
+        <button class="primarybtn" class="addCardBUtton">
+          <img src="./icons/bt_add_to_cart.svg" alt="" />
+          Agregar al Carrito
+        </button>
+      </div>
+    </aside>
+    <div class="producInfo"></div>
+  </body>
+</html>
