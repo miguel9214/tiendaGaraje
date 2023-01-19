@@ -34,6 +34,65 @@
         font-family: "Kanit", sans-serif;
       }
 
+      .producDetalle {
+        width: 360px;
+        padding-bottom: 24px;
+        position: absolute;
+        right: 0;
+      }
+
+      .producDetalleCerrar{
+        background-color:var(--white) ;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        z-index: 2;
+        padding: 12px; 
+        border-radius: 50%;
+      }
+
+      .producDetalleCerrar:hover {
+        cursor: pointer;
+
+      }
+
+      .producDetalle > img:nth-child(2) {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+        border-radius: 0 0 20px 20px;
+      }
+
+      .producInfo{
+        margin: 24px 24px 0 24px;
+      }
+
+      .producInfo p:nth-child(1){
+        font-weight: bold;
+        font-size: var(--md);
+        margin-top: 0;
+        margin-bottom: 4px;
+      }
+
+
+      .producInfo p:nth-child(2){
+        color: var(--very-light-pink);
+        font-size: var(--md);
+        margin-top: 0;
+        margin-bottom: 36px;
+
+      }
+
+      .producInfo p:nth-child(3){
+        color: var(--very-light-pink);
+        font-size: var(--sm);
+        margin-top: 0;
+        margin-bottom: 36px;
+
+      }
+
       .primarybtn {
         background-color: var(--azul-suave);
         border-radius: 8px;
@@ -50,27 +109,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    
       }
 
-      .prodcuDetalle {
-        width: 360px;
-        padding-bottom: 24px;
+      @media (max-width:640px) {
+        .producDetalle{
+          width: 100%;
+        }
       }
 
-      .prodcuDetalle > img:nth-child(1){
-        position: absolute;
-        top: 12px;
-        left: 12px;
-      }
 
-      .prodcuDetalle > img:nth-child(1):hover {
-        cursor: pointer;
-      }
     </style>
     <title>Document</title>
   </head>
   <body>
-    <aside class="prodcuDetalle">
+    <aside class="producDetalle">
+      <div class="producDetalleCerrar">
+        <img src="./icons/icon_close.png" alt="close" />
+      </div>
       <img
         src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         alt="bici"
@@ -85,11 +141,10 @@
           sed, repudiandae consequuntur.
         </p>
         <button class="primarybtn" class="addCardBUtton">
-          <img src="./icons/bt_add_to_cart.svg" alt="" />
+          <img src="./icons/bt_add_to_cart.svg" alt="Agregar al carrito" />
           Agregar al Carrito
         </button>
       </div>
     </aside>
-    <div class="producInfo"></div>
   </body>
 </html>
